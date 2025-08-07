@@ -17,3 +17,6 @@ cdk.context.json
 
 # Python venv (for docs)
 .venv
+
+# macOS
+.DS_Store

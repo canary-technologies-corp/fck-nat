@@ -1,7 +1,7 @@
 packer {
   required_plugins {
     amazon = {
-      version = ">= 1.0.8"
+      version = ">= 1.3.9"
       source  = "github.com/hashicorp/amazon"
     }
   }
@@ -132,7 +132,7 @@ build {
       "sudo yum remove gcc make elfutils-libelf-devel kernel-devel libnl3-devel iptables-devel -y"
     ]
   }
-  
+
   provisioner "file" {
     source = "build/fck-nat-${var.version}-any.rpm"
     destination = "/tmp/fck-nat-${var.version}-any.rpm"
